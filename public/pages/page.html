@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/stylePage.css">
+
+    <script src="/scripts/scriptPage.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 style=" font: 1.8em FbTypoPas Regular"> מקום למלא</h1>
+
+    </header>
+    <div>
+        <a class="a1" href="/pages/registrationPage.html" type="submit" target="_self">כניסה לאזור
+            האישי</a>
+        <a class="a1" href="/pages/recommend.html" target="_self">ממליצים</a>
+        <a class="a1" href="/pages/about.html"> אודותינו</a>
+        <!-- <a href="#contact">דף הבית</a> -->
+        <!-- <div class="login-container">
+            <form action="/action_page.php"> -->
+
+
+        </form>
+    </div>
+    </div>
+
+
+    <br><br><br>
+    <form autocomplete="off" action="searchPage.html">
+        <div class="autocomplete" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="חפש/י עיר" required>
+        </div>
+        <br>
+        <br>
+
+        <select required id='profession' onchange='myfunc()'>
+            <option value="">:בחר/י מקצוע</option>
+            <option value='מורה'>מורה</option>
+            <option value='מטפל/ת'>מטפל/ת</option>
+            <option value="גננ/ת">גננ/ת</option>
+            <option value="סייע/ת">סייע/ת</option>
+            <option value="מדריכ/ה">מדריכ/ה</option>
+            <option value="מרצה">מרצה</option>
+            <option value="חונכ/ת">חונכ/ת</option>
+            <option value="מבשל/ת">מבשל/ת</option>
+            <option value="ריתמיקאי/ת">ריתמיקאי/ת</option>
+            <option value="מפעיל/ת ג'ימבורי">מפעיל/ת גימבורי</option>
+        </select>
+        <select required id='specialization'></select>
+
+        <br>
+        <br>
+
+        <input type=submit value="חיפוש" class="search">
+
+        <br>
+        <br>
+
+        <textarea id="free" onclick=freeSearch() pattern="^/[A-Za-z]{3}/$"> חיפוש חופשי </textarea>
+
+        </div>
+
+        <br>
+        <br>
+
+    </form>
+
+    <br>
+    <br>
+
+    <footer>
+        רוצים להחמיא? יש לכם הצעה לשיפור/ייעול? <a href="/pages/contactUs.html" class="a2">כתבו לנו </a>
+    </footer>
+    <br>
+    <br>
+    <footer class="center">
+        <a href="/pages/takanon.html" class="a3"> תקנון האתר</a>
+        <a href="/pages/contactUs.html" class="a3">צור קשר </a>
+        <a href="/pages/recommend.html" class="a3">ממליצים על האתר </a>
+        <a href="/pages/about.html" class="a3"> אודותינו</a>
+
+
+    </footer>
+
+</body>
+
+</html>

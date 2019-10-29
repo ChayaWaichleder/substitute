@@ -1,0 +1,20 @@
+* {
+    font: 1em FbTypoPas Regular;
+    text-align: center;
+    border-radius: 15px;
+}
+
+header {
+    font: 1.8em FbTypoPas Regular;
+    text-align: center;
+    background-color: aqua;
+}
+
+.b1 {
+    background-image: url(logo.jpg);
+}
+
+div {
+    background-color: turquoise;
+    height: 200px;
+}

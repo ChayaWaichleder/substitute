@@ -1,0 +1,196 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/styleRegistration.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form id="myForm">
+        <h2> דף הרשמה</h2>
+        <br>
+        <div id="personal">
+            <h6>
+                פרטים אישיים
+            </h6>
+            <br>
+            <div id="userName" class="bor"> <input id="userName" type="text" name="userName" required>:שם פרטי</div>
+            <br>
+            <div id="" class="bor"> <input id="lastName" type="text" name="last name">:שם משפחה</div>
+            <br>
+            <div class="bor"> <input id="adress" type="text" name="adress">:עיר מגורים</div>
+            <br>
+            <br>
+
+            <div class="bor">
+                <input list="gender">
+
+                <datalist id="gender">
+                    <option value=" זכר">
+                    <option value="נקבה">
+                    <option value="השאר ריק">
+                </datalist> :מין
+            </div>
+
+            <br>
+            <div class="bor"> <input type="text" name="password" id="password" required> הגדר סיסמא</div>
+            <br>
+            <div class="bor"> <input type="password" name="סיסמא" id="check" required onclick="show()"> אשר סיסמא
+            </div>
+            <br>
+            <span id="checkP" class="hide">...בודק סיסמא</span>
+            <br>
+
+        </div>
+        <div>
+            <h6>
+                פרטי התקשרות
+            </h6>
+            <br>
+            <input id="tel" type="tel" name="tel" value="טלפון" required onclick="checkPass()"><br>
+            <br>
+            <input id="email" type="email" name="email" value="אי-מייל"><br>
+            <br>
+            <br>
+
+        </div>
+        <div>
+            <h6>
+                לימודים וניסיון </h6>
+            <br>
+            מקצוע
+            <br>
+            <input id="" type="text" name="profession"><br>
+            התמחות
+            <br>
+            <input type="text" name="profession"><br>
+            תעודות
+            <br>
+            <input type="text" name="profession"><br>
+            ניסיון קודם
+            <br>
+            <input type="text" name="profession"><br>
+            המלצות
+            <br>
+            <input type="text" name="profession"><br>
+        </div>
+        <div>
+            <h6>
+                זמינות </h6>
+            <br>
+            הימים שבהם אני פנוי
+            <br>
+            <div>
+
+                <table>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="sun" onclick="checkbox()"></td>
+                        <td>ראשון</td>
+                    </tr>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="mon" onclick="checkbox()"></td>
+                        <td>שני</td>
+                    </tr>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="tues" onclick="checkbox()"></td>
+                        <td>שלישי</td>
+                    </tr>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="wednes" onclick="checkbox()"></td>
+                        <td>רביעי</td>
+                    </tr>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="thurs" onclick="checkbox()"></td>
+                        <td>חמישי</td>
+                    </tr>
+                    <tr id="days">
+                        <td> <input type="checkbox" id="fri" onclick="checkbox()"></td>
+                        <td>שישי</td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <br>
+            תאריך עדכון<br>
+            <input type="text" name="profession"><br>
+        </div>
+        <button type="submit" id="submitBtn"> הרשמה </button>
+    </form>
+    <script>
+        function isNumber() {
+
+        }
+    </script>
+    <script>
+        function checkPass() {
+            let personal = document.getElementById("checkP")
+
+            if (password.value === check.value) {
+                personal.innerHTML = " ";
+                personal.append("הסיסמאות תואמות")
+            } else {
+                personal.innerHTML = " ";
+                personal.append("הסיסמאות אינן תואמות")
+            }
+        };
+
+        function show() {
+            checkP.classList.remove("hide")
+        }
+    </script>
+    <script>
+        $('#submitBtn').click(function (e) {
+            // make sure the form is not submitted
+            e.preventDefault();
+            // run the form validations
+            document.getElementById('myForm').checkValidity();
+            // check if the form is valid
+            if (document.getElementById('myForm').reportValidity()) {
+                // form is valid, create a post request
+                $.ajax({
+                    type: "post",
+                    url: "https://obscure-falls-91518.herokuapp.com/registration/login",
+                    // the user data 
+                    data: {
+                        userName: $('#userName').val(),
+                        password: $('#password').val()
+                    },
+                    complete: // this function is called when the request is finished
+                        function (xhr, status) {
+                            // check if there is an error
+                            if (status === 'error')
+                                alert(xhr.responseText);
+                            else
+                                alert(xhr.responseText);
+                        }
+
+                });
+            }
+            xhr.send();
+        });
+    </script>
+
+    <!-- <script>
+            let arr = [firstName, lastName, adress, password, tel, email]
+            let items = []
+            const cookieKey = "cookieValue";
+            for (let item of arr) {
+                document.getElementById(item)
+                items.push(item.value);
+                console.log(item);
+
+                Cookies.set(cookieKey, arr, {
+                    expires: 7
+                });
+
+            }
+        </script> -->
+    <!-- העוגיה עובדת!!! אבל אי אפשר להתשמש בה בגלל שאין נתונים בשרת לפי העוגיה!!! -->
+
+
+
+</body>
+
+</html>

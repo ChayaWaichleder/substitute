@@ -1,0 +1,80 @@
+* {
+    font: 1em FbTypoPas Regular;
+    border-radius: 15px;
+    text-align: center;
+}
+
+body {
+    /* background-image: url("/logo.jpg"); */
+    background-color: rgb(160, 247, 218);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+div {
+    display: inline-block;
+    /* box-sizing: border-box; */
+    width: 100%;
+
+}
+
+.a1 {
+    width: 30%;
+    background-color: turquoise;
+    border: gray;
+    border: 28px;
+    margin: 2px 2px 2px 2px;
+    text-decoration: none;
+    padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* padding-left: 60px;
+    padding-right: 60px; */
+    text-align: center;
+
+}
+
+.search {
+    background-color: rgb(78, 228, 228);
+}
+
+select {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+select option {
+    text-align: right;
+    direction: rtl;
+}
+
+.a2 {
+    width: 100px;
+    border: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+
+}
+
+.a3 {
+    background-color: aqua;
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+
+;
