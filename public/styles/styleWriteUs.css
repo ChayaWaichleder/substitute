@@ -1,0 +1,32 @@
+* {
+    font: 1em FbTypoPas Regular;
+    text-align: center;
+}
+
+body {
+    /* background-image: url("/logo.jpg"); */
+    background-color: rgb(160, 247, 218);
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+
+}
+
+.div1 {
+    border: black solid 1px;
+    background-color: lightskyblue;
+    background-size: 45%;
+    margin: 100px;
+    width: 600px;
+
+}
+
+input,
+textarea {
+    width: 400px;
+}
+
+
+
+textarea {
+    block-size: 100px;
+}
