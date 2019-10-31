@@ -41,4 +41,8 @@ app.post('/registration/login', (req, res) => {
     return registration.login(req, res);
 });
 
+app.get('/test', (req, res) => {
+    return registration.login(req, res);
+});
+
 app.listen(port, () => console.log('Example app listening on port ' + port));
