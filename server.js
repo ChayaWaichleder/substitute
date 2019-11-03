@@ -41,4 +41,18 @@ app.post('/registration/login', (req, res) => {
     return registration.login(req, res);
 });
 
+app.get('/test', (req, res) => {
+    return registration.login(req, res);
+});
+
+app.set('view engine', "ejs");
+
+app.get('/userInfo/:id', (req, res) => {
+    console.log(req.params.id);
+    res.render('userInfo', {
+        id: req.params.id
+
+    });
+})
+
 app.listen(port, () => console.log('Example app listening on port ' + port));

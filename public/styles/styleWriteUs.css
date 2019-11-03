@@ -1,6 +1,18 @@
 * {
     font: 1em FbTypoPas Regular;
     text-align: center;
+    box-sizing: border-box;
+}
+
+/* .rtl {
+    direction: rtl;
+} */
+
+head {
+    padding: 20px;
+    direction: rtl;
+    float: right;
+
 }
 
 body {
@@ -8,16 +20,31 @@ body {
     background-color: rgb(160, 247, 218);
     /* background-repeat: no-repeat; */
     background-size: 100%;
+    direction: ltr;
+    margin-top: 20px;
 
 }
 
 .div1 {
-    border: black solid 1px;
+    border: rgb(81, 154, 238) solid 1px;
     background-color: lightskyblue;
     background-size: 45%;
-    margin: 100px;
+    /* margin: 100px; */
     width: 600px;
+    direction: rtl;
+    margin-left: 100px;
+    margin-top: 60px;
+    height: 600px;
+}
 
+.div2 {
+    background-color: mediumaquamarine;
+    width: 400px;
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    content: 10px;
 }
 
 input,
@@ -29,4 +56,24 @@ textarea {
 
 textarea {
     block-size: 100px;
+}
+
+.image {
+    float: right;
+    width: 500px;
+    background-image: url ("images/post-box.png");
+    margin-right: 100px;
+    /* margin-bottom: 100px; */
+    /* margin: 100px;
+    margin-top: 20px; */
+    padding-top: 0px;
+}
+
+.email {
+    widows: 5px;
+    background-image: url ("images/email.jpg");
+}
+
+.search {
+    width: 100px;
 }

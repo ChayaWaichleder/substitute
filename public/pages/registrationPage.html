@@ -1,9 +1,11 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/styles/styleRegistration.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script src="jquery.steps.js"></script>
+    <link href="jquery.steps.css" rel="stylesheet">
 </head>
 
 <body>
@@ -119,78 +121,25 @@
         <button type="submit" id="submitBtn"> הרשמה ועדכון </button>
     </form>
     <script>
-        function isNumber() {
-
-        }
+        $("#wizard").steps();
     </script>
     <script>
-        function checkPass() {
-            let personal = document.getElementById("checkP")
-
-            if (password.value === check.value) {
-                personal.innerHTML = " ";
-                personal.append("הסיסמאות תואמות")
-            } else {
-                personal.innerHTML = " ";
-                personal.append("הסיסמאות אינן תואמות")
-            }
-        };
-
-        function show() {
-            checkP.classList.remove("hide")
-        }
-    </script>
-    <script>
-        $('#submitBtn').click(function (e) {
-            // make sure the form is not submitted
-            e.preventDefault();
-            // run the form validations
-            document.getElementById('myForm').checkValidity();
-            // check if the form is valid
-            if (document.getElementById('myForm').reportValidity()) {
-                // form is valid, create a post request
-                $.ajax({
-                    type: "post",
-                    url: "https://obscure-falls-91518.herokuapp.com/registration/login",
-                    // the user data 
-                    data: {
-                        userName: $('#userName').val(),
-                        password: $('#password').val()
-                    },
-                    complete: // this function is called when the request is finished
-                        function (xhr, status) {
-                            // check if there is an error
-                            if (status === 'error')
-                                alert(xhr.responseText);
-                            else
-                                alert(xhr.responseText);
-                        }
-
-                });
-            }
-            xhr.send();
+        HTMLJavaScript
+        $("#example-basic").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true
         });
     </script>
+    <div id="wizard"></div>
+    <div id="wizard">
+        <h1>First Step</h1>
+        <div>First Content</div>
 
-    <!-- <script>
-            let arr = [firstName, lastName, adress, password, tel, email]
-            let items = []
-            const cookieKey = "cookieValue";
-            for (let item of arr) {
-                document.getElementById(item)
-                items.push(item.value);
-                console.log(item);
-
-                Cookies.set(cookieKey, arr, {
-                    expires: 7
-                });
-
-            }
-        </script> -->
-    <!-- העוגיה עובדת!!! אבל אי אפשר להתשמש בה בגלל שאין נתונים בשרת לפי העוגיה!!! -->
-
-
-
+        <h1>Second Step</h1>
+        <div>Second Content</div>
+    </div>
 </body>
 
 </html>
