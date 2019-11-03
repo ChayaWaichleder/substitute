@@ -47,6 +47,10 @@ body {
     content: 10px;
 }
 
+.div3 {
+    display: inline;
+}
+
 input,
 textarea {
     width: 400px;
