@@ -34,6 +34,9 @@ app.get('/takanon', (req, res) => res.sendFile('./pages/takanon.html', {
 app.get('/contactUs', (req, res) => res.sendFile('./pages/contactUs.html', {
     root: __dirname
 }));
+app.get('/writeUs', (req, res) => res.sendFile('./pages/writeUs.html', {
+    root: __dirname
+}));
 
 app.post('/registration/registration', (req, res) => {
     return registration.registration(req, res);

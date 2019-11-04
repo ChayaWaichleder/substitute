@@ -3,9 +3,8 @@
 <head>
     <title>Demo</title>
     <meta charset="utf-8">
-    <script src="jquery.js"></script>
-    <script src="jquery.steps.js"></script>
-    <link href="jquery.steps.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -17,9 +16,9 @@
                 פרטים אישיים
             </h6>
             <br>
-            <div id="userName" class="bor"> <input id="userName" type="text" name="userName" required>:שם פרטי</div>
+            <div id="firstName" class="bor"> <input id="firstName" type="text" name="firstName" required>:שם פרטי</div>
             <br>
-            <div id="" class="bor"> <input id="lastName" type="text" name="last name">:שם משפחה</div>
+            <div id="lastName" class="bor"> <input id="lastName" type="text" name="last name">:שם משפחה</div>
             <br>
             <div class="bor"> <input id="adress" type="text" name="adress">:עיר מגורים</div>
             <br>
@@ -63,19 +62,19 @@
             <br>
             מקצוע
             <br>
-            <input id="" type="text" name="profession"><br>
+            <input id="job" type="text" name="profession"><br>
             התמחות
             <br>
-            <input type="text" name="profession"><br>
+            <input id="specialization" type="text" name="profession"><br>
             תעודות
             <br>
-            <input type="text" name="profession"><br>
+            <input id="diploma" type="text" name="profession"><br>
             ניסיון קודם
             <br>
-            <input type="text" name="profession"><br>
+            <input id="experience" type="text" name="profession"><br>
             המלצות
             <br>
-            <input type="text" name="profession"><br>
+            <input id="recommendations" type="text" name="profession"><br>
         </div>
         <div>
             <h6>
@@ -120,25 +119,60 @@
         </div>
         <button type="submit" id="submitBtn"> הרשמה ועדכון </button>
     </form>
-    <script>
-        $("#wizard").steps();
-    </script>
-    <script>
-        HTMLJavaScript
+
+    <!-- <script>
+        // HTMLJavaScript
         $("#example-basic").steps({
             headerTag: "h3",
             bodyTag: "section",
             transitionEffect: "slideLeft",
             autoFocus: true
         });
-    </script>
-    <div id="wizard"></div>
-    <div id="wizard">
-        <h1>First Step</h1>
-        <div>First Content</div>
+    </script> -->
+    <script>
+        // listen to click event of the submit button
+        $('#submitBtn').click(function (e) {
+            // make sure the form is not submitted
+            e.preventDefault();
+            // run the form validations
+            document.getElementById('myForm').checkValidity();
+            // check if the form is valid
+            if (document.getElementById('myForm').reportValidity()) {
+                // form is valid, create a post request
+                $.ajax({
+                    type: "post",
+                    url: "registration/registration",
+                    // the user data 
+                    data: {
+                        firstName: $('#firstName').val(),
+                        lastName: $('#lastName').val(),
+                        adress: $('#adress').val(),
+                        gender: $('#gender').val(),
+                        password: $('#password').val(),
+                        email: $('#email').val(),
+                        profession: $('#profession').val(),
+                        job: $('#job').val(),
+                        specialization: $('#specialization').val(),
+                        diploma: $('#diploma').val(),
+                        experience: $('#experience').val(),
+                        recommendations: $('#recommendations').val(),
+                        days: $('#days').val()
 
-        <h1>Second Step</h1>
-        <div>Second Content</div>
+                    },
+                    complete: // this function will run if the request is successful
+                        function (xhr, status) {
+                            // check if there is an error
+                            if (status === 'error')
+                                alert(xhr.responseText);
+                            else
+                                alert('ok');
+                            te
+                        }
+                });
+            }
+        });
+    </script>
+
     </div>
 </body>
 
