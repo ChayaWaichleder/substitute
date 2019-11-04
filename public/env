@@ -1,0 +1,4 @@
+MYSQL_URL=eu-cdbr-west-02.cleardb.net
+MYSQL_USER=b48215ea8bbbd7
+MYSQL_PASSWORS=2021af2e
+MYSQL_DB=substitute
