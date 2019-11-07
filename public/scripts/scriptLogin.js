@@ -1,62 +1,44 @@
-const mysql = require('promise-mysql');
-
-
-let db;
-
-mysql.createPool({
-    connectionLimit: 100,
-    host: process.env.MYSQL_URL,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DB
-}).then((c) => {
-    db = c;
-}).catch((e) => {
-    console.error(e);
-});
+const dbConnection = require('./dbConnection.js')
 
 
 async function login(req, res) {
 
-    let users = db.query("select * from users");
+    let users = await dbConnection.queryConnection("select * from users");
 
-    console.log(user);
-    res.json(user.email);
+    console.log(users);
 
     for (let single of users) {
-        if (single.userName === req.body.userName &&
+        if (single.email === req.body.email &&
             single.password === req.body.password) {
-            return res.sendFile('./pubic/gages/page') //צריך להשלח לאזור האישי
-
+            // res.sendFile('./public/pages/registrationPage.html', {
+            //     root: __dirname
+            // }); //צריך להשלח לאזור האישי
+            res.send("ברוך הבא!");
         }
 
     }
-    res.send("אינך קיים במערכת");
+    res.send("אינך קיים במערכת!");
+
 };
 
 
-async function registration(req, res) {
-    let users = await db.query("select * from users");
+async function register(req, res) {
+    let users = await dbConnection.queryConnection("select * from users");
     console.log(users);
     for (let user of users) {
         if (user.email === req.body.email) {
-            return res.status(500).send("user alredy exists")
+            return res.status(500).send("משתמש קיים כבר במערכת!")
         }
     }
 
-    await db.query(`INSERT INTO users (firstName, lastName, city, gander, password,phoneNumber, email, profession, specialization, diploma, Previous experience, Available days)  VALUES ("${req.body.firstName}","${req.body.lastName}","${req.body.adress}","${req.body.gender}","${req.body.password}", "${req.body.email}", "${req.body.profession}",  "${req.body.job}", "${req.body.specialization}","${req.body.diploma}","${req.body.experience}","${req.body. recommendations}","${req.body. days}")`);
+    await dbConnection.queryConnection(`INSERT INTO users (firstName, lastName, city, gender, password,phoneNumber, email, profession, specialization, diploma)  VALUES("${req.body.firstName}","${req.body.lastName}","${req.body.adress}","${req.body.gender}","${req.body.password}","${req.body.phoneNumber}", "${req.body.email}", "${req.body.profession}",  "${req.body.specialization}","${req.body.diploma}")`);
 
-    // for (let u of users) {
-    //     for (let u of users) {
-    //         if (u.userName === req.body.userName) {
-    //             return res.status(500).send('send ia already exists');
-    //         }
-    //     }
+
     res.send("ok");
 };
 
 module.exports = {
     login,
-    registration
+    register
 
 };

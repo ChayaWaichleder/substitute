@@ -143,7 +143,7 @@ function myfunc() {
 }
 
 function addValue() {
-    document.getElementsByName("option")[];
+    document.getElementsByName("option");
 
 }
 
