@@ -1,24 +1,30 @@
 * {
     font: 1em FbTypoPas Regular;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     text-align: center;
+    direction: rtl;
 }
 
 div {
     border-bottom: 1px solid black;
-    padding: 20px;
+    padding: 25px;
+
 
 }
 
 div input {
-    float: rigth;
+    float: left;
     padding: 2px;
     padding-right: 2px;
     text-align: right;
     border: 0ch;
-    margin: auto;
+    margin: 0;
     width: 250px;
     box-sizing: border-box;
+}
+
+button:hover {
+    color: blue;
 }
 
 .bor {
@@ -28,7 +34,8 @@ div input {
     padding-right: 5px;
     padding-left: 5px;
     margin: auto;
-    width: 400px;
+    width: 350px;
+    text-align: right;
 
 }
 

@@ -1,15 +1,27 @@
 * {
     font: 1em FbTypoPas Regular;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     text-align: center;
+    box-sizing: content-box;
+}
+
+header {
+    margin: 0px;
+
 }
 
 body {
     /* background-image: url("/logo.jpg"); */
-    background-color: rgb(160, 247, 218);
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
 
+
+}
+
+.pass {
+    width: 100%;
+    margin: 0px;
 }
 
 div {

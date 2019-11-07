@@ -2,34 +2,33 @@ const mysql = require('promise-mysql');
 
 let db;
 
-mysql.createPool({
-    connectionLimit: 100,
-    host: "localhost",
-    user: "root",
-    password: "beitar",
-    database: "your db name"
-}).then((c) => {
-    db = c;
-}).catch((e) => {
-    console.error(e);
-});
 
-async function results(req, res) {
+let connectionPromise =
+    mysql.createPool({
+        connectionLimit: 100,
+        host: process.env.MYSQL_URL,
+        user: process.env.MYSQL_USER,
+        password: process.env.MYSQL_PASSWORD,
+        database: process.env.MYSQL_DB
+    }).then((c) => {
+        db = c;
+    }).catch((e) => {
+        console.error(e);
+    });
 
-    let results = await db.query("select * from users");
-
-    console.log(results);
-    res.json(results);
-
-    // // for (let single of users) {
-    // //     if (single.email === req.body.email &&
-    // //         single.password === req.body.password) {
-    // //         res.sendFile('./public/pages/registrationPage.html', {
-    // //             root: __dirname
-    // //         });
-
-    //     }
+module.exports = {
+    queryConnection,
+    getUsers
 }
-module.exports = function (req, res) {
 
+async function queryConnection(str) {
+    await connectionPromise;
+    return db.query(str);
+}
+
+
+async function getUsers() {
+    let users = await dbConnection.queryConnection("select * from users");
+    console.log(users);
+    return users;
 }

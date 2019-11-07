@@ -21,8 +21,8 @@
     <form id="myForm">
         <table>
             <tr>
-                <td><label for="userName">User Name:</label> </td>
-                <td><input type="text" name="userName" id="userName" size="20" required></td>
+                <td><label for="email">email:</label> </td>
+                <td><input type="text" name="email" id="email" size="20" required></td>
             </tr>
             <tr>
                 <td><label for="password">Password:</label></td>
@@ -49,10 +49,10 @@
                 // form is valid, create a post request
                 $.ajax({
                     type: "post",
-                    url: "registration/login",
+                    url: "/registration/login",
                     // the user data 
                     data: {
-                        userName: $('#userName').val(),
+                        email: $('#email').val(),
                         password: $('#password').val()
                     },
                     complete: // this function will run if the request is successful

@@ -38,8 +38,12 @@ app.get('/writeUs', (req, res) => res.sendFile('./pages/writeUs.html', {
     root: __dirname
 }));
 
-app.post('/registration/registration', (req, res) => {
-    return registration.registration(req, res);
+app.get('/searchResults', (req, res) => res.sendFile('./pages/searchResults.html', {
+    root: __dirname
+}));
+
+app.post('/registration/register', (req, res) => {
+    return registration.register(req, res);
 });
 app.post('/registration/login', (req, res) => {
     return registration.login(req, res);

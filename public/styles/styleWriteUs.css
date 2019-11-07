@@ -35,16 +35,19 @@ body {
     margin-left: 100px;
     margin-top: 60px;
     height: 600px;
+
 }
 
 .div2 {
     background-color: mediumaquamarine;
     width: 400px;
     float: center;
-    text-align: center;
+    text-align: right;
     margin: 0 auto;
     margin-top: 10px;
     content: 10px;
+    /* display: inline-block; */
+
 }
 
 .div3 {
@@ -53,7 +56,8 @@ body {
 
 input,
 textarea {
-    width: 400px;
+    width: 300px;
+    text-align: right;
 }
 
 
@@ -71,11 +75,13 @@ textarea {
     /* margin: 100px;
     margin-top: 20px; */
     padding-top: 0px;
+    text-align: left;
 }
 
 .email {
     width: 25px;
     background-image: url ("images/email.jpg");
+    /* float: left; */
 }
 
 .search {
