@@ -17,7 +17,7 @@ head {
 
 body {
     /* background-image: url("/logo.jpg"); */
-    background-color: rgb(160, 247, 218);
+    /* background-color: rgb(160, 247, 218); */
     /* background-repeat: no-repeat; */
     background-size: 100%;
     direction: ltr;
@@ -27,7 +27,8 @@ body {
 
 .div1 {
     border: rgb(81, 154, 238) solid 1px;
-    background-color: lightskyblue;
+    background: url ("/public/images/mail.jpg");
+    background-repeat: no-repeat;
     background-size: 45%;
     /* margin: 100px; */
     width: 600px;
@@ -66,17 +67,14 @@ textarea {
     block-size: 100px;
 }
 
-.image {
+/* .image {
     float: right;
-    width: 500px;
-    background-image: url ("images/post-box.png");
-    margin-right: 100px;
-    /* margin-bottom: 100px; */
-    /* margin: 100px;
-    margin-top: 20px; */
-    padding-top: 0px;
+    width: 95%;
+        background-image: url ("/images/mail.jpg");
+      padding-top: 20px;
     text-align: left;
-}
+    margin: 0%;
+} */
 
 .email {
     width: 25px;
@@ -86,4 +84,11 @@ textarea {
 
 .search {
     width: 100px;
+}
+
+
+.pass {
+    width: 100%;
+    margin: 0px;
+    height: 150px;
 }

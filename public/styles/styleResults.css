@@ -1,0 +1,29 @@
+* {
+    font: 1em FbTypoPas Regular;
+    font-weight: border;
+    text-align: center;
+    box-sizing: border-box;
+    /* direction: rtl; */
+}
+
+h1 {
+    font: 2em FbTypoPas Regular;
+    font-weight: border;
+    color: orangered;
+}
+
+.div1 {
+    background-color: rgb(240, 213, 163);
+    border: rgb(103, 103, 226);
+    width: 40%;
+    /* text-align: center; */
+    margin: 0 auto;
+    direction: rtl;
+    color: rgb(5, 5, 65);
+    letter-spacing: 1px;
+}
+
+.pass {
+    width: 100%;
+    margin: 0px;
+}

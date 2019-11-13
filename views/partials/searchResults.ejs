@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<!-- <script src="/scripts/scriptResults.js"></script> -->
+
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/styleResults.css">
+
+    <script src="./scripts/scriptResults.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <header>
+        <img class="pass" src="/images/headerline.jpg">
+        <br>
+        <h1>תוצאות חיפוש</h1>
+    </header>
+    <div class="div1">
+        <table>
+            <tr>
+                <td>
+                    <div id="firstName">שם פרטי:<br></div>
+                </td>
+                <!-- <td><input type="text" name="firstName" id="firstName"></td> -->
+
+            </tr>
+            <tr>
+                <td>
+                    <div id="lastName">שם משפחה:<br>
+                        <%= d%>
+                    </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div id="city">עיר מגורים:<br></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div id="email">אי-מייל:<br></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">מספר טלפון:<br>
+    </div>
+    </td>
+
+    </tr>
+
+
+    </table>
+    </div>
+    <script>
+        // const mysql = require('promise-mysql');
+        // const dbConnection = require('./dbConnection.js')
+
+
+        // module.exports = {
+
+        //     getUsers
+        // }
+
+
+        // async function getUsers() {
+        //     let users = await dbConnection.queryConnection("select * from users where " + city);
+        //     console.log(users);
+        //     return users;
+        // }
+    </script>
+</body>
+
+</html>
