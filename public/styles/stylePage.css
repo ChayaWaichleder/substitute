@@ -2,53 +2,117 @@
     font: 1em FbTypoPas Regular;
     /* border-radius: 15px; */
     text-align: center;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
+
 }
 
 header {
     margin: 0px;
-
+    margin-bottom: 0px;
+    /* box-sizing: border-box; */
+    height: -4px;
 }
 
-body {
-    /* background-image: url("/logo.jpg"); */
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: 100%;
+/* body {
+     background-image: url("/logo.jpg"); 
+     background-color: white;
+background-repeat: no-repeat;
+background-size: 100%;
 
 
+} */
+
+form {
+    background-color: rgb(131, 184, 184);
+    width: 33.13%;
+    text-align: center;
+    direction: rtl;
+    /* padding: 20px, 300px, 20px, 300px; */
+    /* margin-left: 100px; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    float: center;
 }
 
 .pass {
     width: 100%;
     margin: 0px;
+    margin-bottom: 0px;
 }
 
-div {
+/* div {
     display: inline-block;
-    /* box-sizing: border-box; */
-    width: 100%;
+    /* box-sizing: border-box;
+width: 100%;
 
+}  */
+
+.diary {
+    width: 50%;
+    float: right;
+    margin: 0px;
+}
+
+.sizeBox {
+    width: 250px;
+    height: 35px;
+    text-align-last: center;
+    /* direction: rtl; */
+    background-color: rgb(214, 215, 216);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin: 0px;
+
+}
+
+.d2 {
+    display: block;
 }
 
 .a1 {
-    width: 30%;
-    background-color: turquoise;
+    width: 33.13%;
+    height: 15px;
+    color: white;
+    background-color: rgb(243, 132, 4);
     border: gray;
     border: 28px;
-    margin: 2px 2px 2px 2px;
+    margin: 0px;
     text-decoration: none;
-    padding: 100px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    /* padding-left: 60px;
-    padding-right: 60px; */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     text-align: center;
-
+    display: inline-block;
+    /* display: block; */
+    font: 1.2em FbTypoPas Regular;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
+.aa {
+    display: block;
+}
+
+
+
 .search {
-    background-color: rgb(78, 228, 228);
+    background-color: rgb(85, 97, 97);
+    width: 250px;
+    height: 35px;
+    font-weight: bold;
+    color: white;
 }
 
 select {
@@ -68,17 +132,24 @@ select option {
     border: 0px;
     margin: 0px;
     text-decoration: none;
-    color: black;
-    background-color: aqua;
+    color: rgb(226, 125, 31);
+    /* background-color: aqua; */
 
 }
 
 .a3 {
-    background-color: aqua;
     text-align: center;
-    margin: 8px;
-    padding: 8px;
+    /* margin: 8px;
+    padding: 8px; */
     text-decoration: none;
+    background-color: rgb(83, 97, 97);
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    padding-top: 25px;
+    font: 1.2em FbTypoPas Regular;
+    margin: 0px;
+    padding-bottom: 0px;
 }
 
 .center {
@@ -88,5 +159,6 @@ select option {
     width: 500px;
 }
 
-
-;
+.list {
+    list-style-type: none;
+}

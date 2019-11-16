@@ -1,24 +1,20 @@
-const dbConnection = require('./dbConnection.js')
-
-
-
+const dbConnection = require('./dbConnection.js');
 
 async function getUsers(req, res) {
+    console.log(req.body.city);
+    console.log(req.body.profession);
+    console.log(req.body.specialization);
 
     let users = await dbConnection.queryConnection(
-        `select * from users where city=  " ${req.body.city}" AND profession= " ${req.body.profession}" AND specialization= "${req.body.specialization}"`);
-    if (users !== 0) {
-        res.send("ok")
+        "select * from users where city='" + req.body.city + "' AND profession='" + req.body.profession + "' AND specialization='" + req.body.specialization + "'"); {
+        return users;
     }
-
-    return res.status(500).send("לא נמצאו תוצאות לחיפוש שלך")
-
 }
 
 module.exports = {
     getUsers
 
-};
+}
 
 // let t = getUsers();
 // console.log(t);

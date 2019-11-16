@@ -9,7 +9,7 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script src="/scripts/scriptPage.js"></script>
-    <script src="/scripts/scriptResults.js"></script>
+    <!-- <script src="/scripts/scriptResults.js"></script> -->
 </head>
 
 <body>
@@ -20,80 +20,96 @@
 
     </header>
 
-    <br>
-    <br>
-    <div>
-        <a class="a1" href="../login" type="submit" target="_self">הרשמה/ כניסה לאזור האישי
-        </a>
-        <a class="a1" href="/pages/recommend.html" target="_self">ממליצים על האתר</a>
-        <a class="a1" href="/pages/about.html"> אודותינו</a>
-        <!-- <a href="#contact">דף הבית</a> -->
-        <!-- <div class="login-container">
+
+    <div style="width: 100%;">
+        <ul>
+            <li class="a1" style="background-color: grey;">
+                <div class="d2"><a href="/pages/about.html" class="aa"> אודותינו</a></div>
+            </li>
+
+            <li class="a1" style="background-color: grey;">
+                <div class="d2"><a href="/pages/recommend.html" target="_self" class="aa">ממליצים על האתר</a></div>
+            </li>
+            <li class="a1">
+                <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
+                    </a></div>
+            </li>
+            <!-- <li class="a1">
+                    <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
+                        </a></div>
+                </li> -->
+            <!-- <a href="#contact">דף הבית</a> -->
+            <!-- <div class="login-container">
             <form action="/action_page.php"> -->
 
-
-
+        </ul>
     </div>
-    </div>
+    <ul style="margin: 0px;">
+        <img class="diary" src="/images/diary1.jpg">
+
+        <li>
+            <form id="myForm">
+                <div class="autocomplete" class="sizeBox">
+                    <input class="sizeBox" id="city" type="text" name="myCountry" placeholder="אזור" required>
+                </div>
+                <br>
 
 
-    <br><br><br>
-    <form id="myForm">
-        <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="חפש/י עיר" required>
-        </div>
-        <br>
-        <br>
+                <select class="sizeBox" required id='profession' onchange='myfunc()'>
+                    <option value="">מקצוע:</option>
+                    <option value='מורה'>מורה</option>
+                    <option value='מטפל/ת'>מטפל/ת</option>
+                    <option value="גננ/ת">גננ/ת</option>
+                    <option value="סייע/ת">סייע/ת</option>
+                    <option value="מדריכ/ה">מדריכ/ה</option>
+                    <option value="מרצה">מרצה</option>
+                    <option value="חונכ/ת">חונכ/ת</option>
+                    <option value="מבשל/ת">מבשל/ת</option>
+                    <option value="ריתמיקאי/ת">ריתמיקאי/ת</option>
+                    <option value="מפעיל/ת ג'ימבורי">מפעיל/ת גימבורי</option>
+                </select>
+                <br>
+                <br>
+                <select class="sizeBox" required id='specialization'></select>
 
-        <select required id='profession' onchange='myfunc()'>
-            <option value="">:בחר/י מקצוע</option>
-            <option value='מורה'>מורה</option>
-            <option value='מטפל/ת'>מטפל/ת</option>
-            <option value="גננ/ת">גננ/ת</option>
-            <option value="סייע/ת">סייע/ת</option>
-            <option value="מדריכ/ה">מדריכ/ה</option>
-            <option value="מרצה">מרצה</option>
-            <option value="חונכ/ת">חונכ/ת</option>
-            <option value="מבשל/ת">מבשל/ת</option>
-            <option value="ריתמיקאי/ת">ריתמיקאי/ת</option>
-            <option value="מפעיל/ת ג'ימבורי">מפעיל/ת גימבורי</option>
-        </select>
-        <select required id='specialization'></select>
-
-        <br>
-        <!-- 
+                <br>
+                <!-- 
         <br>
 
         <textarea id="free" onclick=freeSearch() pattern="^/[A-Za-z]{3}/$"> חיפוש חופשי </textarea>
         <br> -->
-        <br>
+                <br>
 
-        <button type="submit" id="submitBtn" class="search">חיפוש </button>
+                <button type="submit" id="submitBtn" class="search">חיפוש </button>
 
-        <br>
-        <br>
-        </div>
+                <br>
 
-        <br>
-        <br>
+                </div>
 
-    </form>
 
-    <br>
-    <br>
+            </form>
+        </li>
+    </ul>
+
 
     <footer>
-        רוצים להחמיא? יש לכם הצעה לשיפור/ייעול? <a href="../writeUs" class="a2">כתבו לנו </a>
+        <ul class="a3">
+            <li class="list" style="float: right; margin-right: 30px;font-style:italic;color: burlywood;
+            "> רוצים להחמיא? יש לכם הצעה
+                לשיפור/ייעול? <a href="../writeUs" class="a2" style="font-style:italic; font-weight: bold; letter-spacing: 1px;
+
+                ">כתבו לנו
+                </a></li>
+            <li class="list" style="float: left; margin-left: 30px;">
+                <div>
+                    <a href="/pages/takanon.html"> תקנון האתר</a>
+
+                </div>
+            </li>
+        </ul>
     </footer>
-    <br>
-    <br>
-    <footer class="center">
-        <a href="/pages/takanon.html" class="a3"> תקנון האתר</a>
-        <!-- <a href="/pages/recommend.html" class="a3">ממליצים על האתר </a>
-        <a href="/pages/about.html" class="a3"> אודותינו</a> -->
 
 
-    </footer>
     <script>
         $('#submitBtn').click(function (e) {
             // make sure the form is not submitted
@@ -117,9 +133,8 @@
                             // check if there is an error
                             if (status === 'error')
                                 alert(xhr.responseText);
-                            else
-                                alert(xhr.responseText);
-                            window.location.replace('../searchResults');
+                            // else
+                            //     alert(xhr.responseText);
                         }
                 });
             }

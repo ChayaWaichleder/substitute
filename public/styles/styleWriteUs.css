@@ -34,20 +34,22 @@ body {
     width: 600px;
     direction: rtl;
     margin-left: 100px;
-    margin-top: 60px;
+    margin-top: 0px;
     height: 600px;
 
 }
 
 .div2 {
-    background-color: mediumaquamarine;
-    width: 400px;
-    float: center;
+    /* background-color: mediumaquamarine; */
+    border: rgb(81, 154, 238) solid 1px;
+    /* height: 40px; */
+    width: 450px;
+    /* float: center; */
     text-align: right;
     margin: 0 auto;
     margin-top: 10px;
-    content: 10px;
-    /* display: inline-block; */
+    /* content: 10px; */
+    display: inline-block;
 
 }
 
@@ -55,10 +57,14 @@ body {
     display: inline;
 }
 
-input,
-textarea {
-    width: 300px;
+.input1 {
+    width: 350px;
     text-align: right;
+    float: left;
+    margin-left: 8px;
+    /* margin-bottom: 8px; */
+    margin-top: 8px;
+    border: white;
 }
 
 
@@ -80,15 +86,18 @@ textarea {
     width: 25px;
     background-image: url ("images/email.jpg");
     /* float: left; */
+    margin-top: 8px;
 }
 
 .search {
     width: 100px;
+    height: 35px;
+    float: center;
 }
 
 
 .pass {
     width: 100%;
     margin: 0px;
-    height: 150px;
+    height: 200px;
 }
