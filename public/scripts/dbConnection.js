@@ -17,11 +17,14 @@ let connectionPromise =
         console.error(e);
     });
 
-module.exports = {
-    queryConnection
-}
+
 
 async function queryConnection(str) {
     await connectionPromise;
     return db.query(str);
 }
+
+module.exports = {
+    queryConnection
+}
+

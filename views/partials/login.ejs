@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <title>מקום למלא</title>
+
     <title>Login</title>
     <style>
         .pageHeader {
@@ -61,8 +63,11 @@
                             // check if there is an error
                             if (status === 'error')
                                 alert(xhr.responseText);
-                            else
-                                alert(xhr.responseText);
+                            else {
+                                alert("ok");
+                                window.location.replace('privateArea/' + xhr.responseText);
+                            }
+
                         }
                 });
             }

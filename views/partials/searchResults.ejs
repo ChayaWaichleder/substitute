@@ -1,21 +1,28 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="../../public/styles/styleResults.css">
+    <title>מקום למלא</title>
 
 </head>
 
 <body>
+
     <header>
         <!-- <img class="pass" src="/images/headerline.jpg"> -->
         <br>
         <h1>תוצאות חיפוש</h1>
     </header>
+
+
     <div class="div1">
         <table>
             <tr>
                 <td>
-                    <div id="firstName">שם פרטי:<br></div>
+                    <div id="firstName">שם פרטי:<br>
+                        <%=d.firstName%>
+                    </div>
                 </td>
                 <!-- <td><input type="text" name="firstName" id="firstName"></td> -->
 
@@ -23,25 +30,30 @@
             <tr>
                 <td>
                     <div id="lastName">שם משפחה:<br>
-                        <%= d%>
+                        <%= d.lastName%>
                     </div>
                 </td>
 
             </tr>
             <tr>
                 <td>
-                    <div id="city">עיר מגורים:<br></div>
+                    <div id="city">עיר מגורים:<br>
+                        <%=d.city%>
+                    </div>
                 </td>
 
             </tr>
             <tr>
                 <td>
-                    <div id="email">אי-מייל:<br></div>
+                    <div id="email">אי-מייל:<br>
+                        <%=d.email%>
+                    </div>
                 </td>
 
             </tr>
             <tr>
                 <td><label for="phoneNumber">מספר טלפון:<br>
+                        <%=d.phoneNumber%>
                 </td>
 
             </tr>

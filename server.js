@@ -7,7 +7,7 @@ const registration = require('./public/scripts/scriptLogin.js');
 const results = require('./public/scripts/scriptResults.js');
 const bodyParser = require('body-parser')
 const dbConnection = require('./public/scripts/dbConnection.js');
-
+const ejs = require('ejs');
 
 app.set('view engine', "ejs");
 app.use(bodyParser.urlencoded({
@@ -15,9 +15,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'));
 app.use(cookieParser());
-// Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
-// Parse JSON bodies (as sent by API clients)
+
 app.use(express.json());
 
 app.get('/', (req, res) => res.render('./partials/page', {
@@ -30,18 +29,16 @@ app.get('/login', (req, res) => res.render('./partials/login', {
 
 }));
 
-app.get('/about', (req, res) => res.sendFile('./public/pages/about.html', {
+app.get('/about', (req, res) => res.sendFile('./partials/about', {
     root: __dirname
 }));
-app.get('/recommend', (req, res) => res.sendFile('./pages/recommend.html', {
+app.get('/recommend', (req, res) => res.sendFile('./partials/recommend', {
     root: __dirname
 }));
-app.get('/takanon', (req, res) => res.sendFile('./pages/takanon.html', {
+app.get('/takanon', (req, res) => res.sendFile('./partials/takanon', {
     root: __dirname
 }));
-// app.get('/contactUs', (req, res) => res.sendFile('./pages/contactUs.html', {
-//     root: __dirname
-// }));
+
 app.get('/writeUs', (req, res) => res.render('./partials/writeUs', {
 
 }));
@@ -50,7 +47,8 @@ app.get('/searchResults', (req, res) => res.render('./partials/searchResults', {
 }));
 
 
-app.get('/pages/privateArea/:id', async function (req, res) {
+
+app.get('/privateArea/:id', async function (req, res) {
     // pagesלבדוק את נתיב עם ה 
     let data = await dbConnection.queryConnection("select * from users where id = " + req.params.id);
     let d = data[0];
@@ -66,27 +64,28 @@ app.post('/registration/login', (req, res) => {
     return registration.login(req, res);
 });
 app.post('/results/getUsers', async (req, res) => {
-    debugger;
-    console.log("kkkkkkkkkkkkk");
+
 
     let data11 = await results.getUsers(req, res);
     console.log(data11);
     if (data11.length == 0) {
         res.status(500).send("לא נמצאו תוצאות לחיפוש שלך")
     } else {
-        console.log("fods");
-
         let d = data11[0];
         console.log(d);
-        res.render('partials/searchResults',
+        res.render('partials/searchResults', {
             d
-        )
+        })
+        console.log(d.firstName);
+
+        //     ejs.render ('partials/searchResults',
+        //    {d
+        // })
+
     }
 });
 
-// app.get('/test', (req, res) => {
-//     return registration.login(req, res);
-// });
+
 
 
 

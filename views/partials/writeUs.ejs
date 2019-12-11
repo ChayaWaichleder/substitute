@@ -5,6 +5,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/styleWriteUs.css">
+    <title>נשמור על קשר </title>
 
 </head>
 
@@ -16,57 +17,59 @@
     </header>
 
 
+    <form action="../../pages/message.html">
+
+        <img class="image" src="/images/mail.jpg">
+        <div class="div1">
+            <br>
+
+            <h1 style=" font: 2.1em FbTypoPas Regular; font-weight:bold; color: rgb(119, 57, 16);">נשמור על קשר</h1>
 
 
+            <h4 style=" font: 1.05em FbTypoPas Regular; font-weight:bold ">כתבו לנו את ההודעה שלכם כדי שנוכל להיות בקשר
+            </h4>
 
-    <div class="div1">
-        <!-- <img class="image" src="/images/mail.jpg"></img> -->
+            <div class="div2" style="height: 40px;">
+                <img class="email" src="/images/e-mail.png">
+                שם:
+                <div class="div3">
 
-        <h1 style=" font: 2em FbTypoPas Regular">נשמור על קשר</h1>
+                    <input id="name" type="text" name="name" required class="input1"></div>
 
-
-        <h4 style=" font: 1.2em FbTypoPas Regular">כתבו לנו את ההודעה שלכם כדי שנוכל להיות בקשר</h4>
-
-        <div class="div2" style="height: 40px;">
-            <img class="email" src="/images/email.jpg">
-            שם:
-            <div class="div3">
-
-                <input id="name" type="text" name="name" required class="input1"></div>
-
-        </div>
-
-
-        <div class="div2" style="height: 40px;">
-            <!-- <ul style="list-style-type: none;"> -->
-            <div style="display: inline;"> <img class="email" src="/images/email.jpg"></div>
-
-
-            <div style="display: inline; padding-top: 0px; ">
-                אימייל:
             </div>
 
-            <input id="email" type="email" name="email" required class="input1" style="display: inline;">
 
-            <!-- </ul> -->
-        </div>
+            <div class="div2" style="height: 40px;">
+                <!-- <ul style="list-style-type: none;"> -->
+                <div style="display: inline;"> <img class="email" src="/images/e-mail.png"></div>
 
 
-        <div class="div2">
-            <img class="email" src="/images/email.jpg">
-            ההודעה שלך:
+                <div style="display: inline; padding-top: 0px; ">
+                    אימייל:
+                </div>
 
-            <textarea id="free" placeholder="כתוב את ההודעה שלך כאן..." pattern="^/[A-Za-z]{3}/$" class="input1"
-                style="height: 100px;width: 430px;"></textarea>
-        </div>
+                <input id="email" type="email" name="email" required class="input1" style="display: inline;">
 
-        <br>
-        <br>
-        <br>
-        <input type=submit value="שלח הודעה" class="search" style="text-align: center;">
-        <form action="message.html"></form>
-        <br>
+                <!-- </ul> -->
+            </div>
+
+
+            <div class="div2">
+                <img class="email" src="/images/e-mail.png">
+                ההודעה שלך:
+
+                <textarea id="free" placeholder="כתוב את ההודעה שלך כאן..." pattern="^/[A-Za-z]{3}/$" class="input1"
+                    style="height: 100px;width: 430px;"></textarea>
+            </div>
+
+
+            <br>
+            <input type=submit value="שלח הודעה" class="search" style="text-align: center;">
+
+    </form>
+
     </div>
+
     <br>
     </div>
 

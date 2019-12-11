@@ -1,13 +1,33 @@
 * {
     font: 1em FbTypoPas Regular;
     text-align: center;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    direction: rtl;
 }
 
-header {
+/* header {
     font: 1.8em FbTypoPas Regular;
     text-align: center;
     background-color: aqua;
+} */
+
+header {
+    margin: 0px;
+    margin-bottom: 0px;
+    /* box-sizing: border-box; */
+    height: -4px;
+}
+
+body {
+    margin: 0px;
+  
+    }
+    
+
+.pass {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
 }
 
 .b1 {
@@ -15,6 +35,9 @@ header {
 }
 
 div {
-    background-color: turquoise;
+    background-color: rgb(110, 138, 135);
     height: 200px;
+    text-align: right;
+    width: 100%;
+
 }

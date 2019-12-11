@@ -16,6 +16,9 @@ module.exports = {
 
 }
 
+// document.getElementById('firstName').innerHTML = xhr.responseText;
+
+
 // let t = getUsers();
 // console.log(t);
 

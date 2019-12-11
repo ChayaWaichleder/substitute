@@ -1,0 +1,43 @@
+* {
+    font: 1em FbTypoPas Regular;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* .rtl {
+    direction: rtl;
+} */
+
+head {
+    padding: 20px;
+    direction: rtl;
+    float: right;
+
+}
+
+.pass {
+    width: 100%;
+    margin: 0px;
+    height: 200px;
+}
+
+h1 {
+    font: 1.5em FbTypoPas Regular;
+    color: rgb(223, 148, 10);
+    background-color: rgb(214, 215, 216);
+    height: 80px;
+    margin: 0%;
+    margin-bottom: 20px;
+    padding-top: 25px;
+
+}
+
+.div1 {
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+    border: rgb(123, 229, 243) solid 2px;
+    background-color: rgb(238, 194, 111);
+}
