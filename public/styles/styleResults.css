@@ -23,7 +23,23 @@ h1 {
     letter-spacing: 1px;
 }
 
+/* .pass {
+    width: 100%;
+    margin: 0px;
+} */
+
+
 .pass {
     width: 100%;
     margin: 0px;
+    margin-bottom: 0px;
+}
+
+.home {
+    position: relative;
+    width: 33%;
+    height: 220px;
+    margin: 0px;
+    /* margin-right: 75px; */
+    /* float: right; */
 }

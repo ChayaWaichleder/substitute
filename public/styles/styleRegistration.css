@@ -5,12 +5,12 @@
     direction: rtl;
 }
 
-div {
-    border-bottom: 1px solid black;
-    padding: 25px;
+/* div {
+    /* border-bottom: 1px dotted black; */
+/* padding: 25px; 
 
 
-}
+} */
 
 div input {
     float: left;
@@ -24,21 +24,91 @@ div input {
 }
 
 button:hover {
-    color: blue;
+    color: rgb(255, 123, 0);
 }
 
 .bor {
     border: 1px solid black;
-    background: rgb(213, 221, 231);
+    background-color: rgb(192, 224, 228);
     padding: 10px;
     padding-right: 5px;
     padding-left: 5px;
     margin: auto;
     width: 350px;
     text-align: right;
-
+    margin-top: 6px;
 }
 
 .hide {
     display: none;
+}
+
+.pass {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+    /* position: absolute; */
+}
+
+.home {
+    position: relative;
+    width: 33%;
+    height: 220px;
+    margin: 0px;
+    /* margin-right: 75px; */
+    /* float: right; */
+}
+
+body {
+    margin: 0px;
+}
+
+h6 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+h1 {
+    font: 1.8em FbTypoPas Regular;
+    font-weight: bold;
+    color: rgb(223, 148, 10);
+    background-color: rgb(214, 215, 216);
+    width: 100%;
+    height: 45px;
+    margin: 0%;
+    /* margin-bottom: 20px; */
+    padding-top: 0px;
+    /* text-align: right;
+    padding-right: 300px; */
+}
+
+.a1 {
+    width: 250px;
+    height: 15px;
+    color: white;
+    background-color: rgb(243, 132, 4);
+    border: rgb(92, 92, 92);
+    border: 28px;
+    margin: 0px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    text-align: center;
+    display: inline-block;
+    /* display: block; */
+    /* font: 1.2em FbTypoPas Regular; */
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.d2 {
+    display: block;
+}
+
+ul {
+    margin-top: 0px;
 }

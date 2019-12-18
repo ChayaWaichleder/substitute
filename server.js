@@ -19,20 +19,14 @@ app.use(express.urlencoded());
 
 app.use(express.json());
 
-app.get('/', (req, res) => res.render('./partials/page', {
-}));
-app.get('/registration', (req, res) => res.render('./partials/registrationPage', {
-}));
-app.get('/login', (req, res) => res.render('./partials/login', {
-}));
+app.get('/', (req, res) => res.render('./partials/page', {}));
+app.get('/registration', (req, res) => res.render('./partials/registrationPage', {}));
+app.get('/login', (req, res) => res.render('./partials/login', {}));
 
-app.get('/about', (req, res) => res.render('./partials/about', {
-}));
-app.get('/recommend', (req, res) => res.render('./partials/recommend', {
-}));
+app.get('/about', (req, res) => res.render('./partials/about', {}));
+app.get('/recommend', (req, res) => res.render('./partials/recommend', {}));
 
-app.get('/takanon', (req, res) => res.render('./partials/takanon', {   
-}));
+app.get('/takanon', (req, res) => res.render('./partials/takanon', {}));
 
 app.get('/writeUs', (req, res) => res.render('./partials/writeUs', {
 

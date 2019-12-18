@@ -5,8 +5,11 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/styles/stylePrivateArea.css">
+        <title>מקום למלא</title>
+    
     <!-- <script src="/scripts/scriptPrivateArea.js"></script> -->
-    <style>
+    <!-- <style>
         body {
             background-color: lightblue;
 
@@ -17,11 +20,23 @@
             font: 1em FbTypoPas Regular;
             font-size: 30px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <div>
+
+    <header>
+            <header>
+                    <!-- <img class="pass" src="/images/headerline.jpg"> -->
+                    <div class="pass">
+                            <img class="home" src="/images/pass2.jpg" style="width: 80px; float: right;">
+                            <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home" style="width: 450px; "></a>
+                            <img class="home" style="width: 750px; float: left;" src="/images/pass1.jpg">
+                            </div>
+                </header>
+    </header>
+
+    <div class="div1">
         שם פרטי:
         <%=d.firstName%><br><br>
         שם משפחה:

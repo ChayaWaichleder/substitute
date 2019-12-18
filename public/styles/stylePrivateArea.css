@@ -5,11 +5,11 @@
     /* border-radius: 15px; */
 }
 
-/* header {
+header {
     font: 1.8em FbTypoPas Regular;
     text-align: center;
- 
-} */
+    /* background-color: aqua; */
+}
 
 h1 {
     font: 1.5em FbTypoPas Regular;
@@ -20,9 +20,7 @@ h1 {
 
 }
 
-/* .b1 {
-    background-image: url(logo.jpg);
-} */
+
 
 /* div {
     background-color: rgb(175, 209, 206);
@@ -49,4 +47,11 @@ h1 {
 
 body {
     margin: 0px;
+}
+
+.div1 {
+    height: 400px;
+    background-color: rgb(134, 236, 219);
+   float: right;
+
 }

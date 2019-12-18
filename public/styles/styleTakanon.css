@@ -11,33 +11,58 @@
     background-color: aqua;
 } */
 
-header {
+/* header {
     margin: 0px;
     margin-bottom: 0px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     height: -4px;
+} */
+
+h1 {
+    font: 1.8em FbTypoPas Regular;
+    color: rgb(226, 125, 31);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 body {
     margin: 0px;
-  
-    }
-    
 
+}
+
+
+/* .pass {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+} */
 .pass {
     width: 100%;
     margin: 0px;
     margin-bottom: 0px;
 }
 
+.home {
+    position: relative;
+    width: 33%;
+    height: 220px;
+    margin: 0px;
+    /* margin-right: 75px; */
+    /* float: right; */
+}
+
 .b1 {
     background-image: url(logo.jpg);
 }
 
-div {
-    background-color: rgb(110, 138, 135);
+.div1 {
+    background-color: rgb(192, 218, 215);
     height: 200px;
-    text-align: right;
-    width: 100%;
-
+    text-align: justify;
+    text-align-last: right;
+    word-break: break-all;
+    width: 96.75%;
+    padding-right: 25px;
+    padding-left: 25px;
+    content: 96%;
 }

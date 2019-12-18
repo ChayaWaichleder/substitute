@@ -3,7 +3,6 @@
     /* border-radius: 15px; */
     text-align: center;
     /* box-sizing: content-box; */
-
 }
 
 header {
@@ -14,7 +13,7 @@ header {
 }
 
 body {
-margin: 0px;
+    margin: 0px;
 
 
 }
@@ -35,6 +34,15 @@ form {
     width: 100%;
     margin: 0px;
     margin-bottom: 0px;
+}
+
+.home {
+    position: relative;
+    width: 33%;
+    height: 220px;
+    margin: 0px;
+    /* margin-right: 75px; */
+    /* float: right; */
 }
 
 /* div {
@@ -147,6 +155,7 @@ select option {
     font: 1.2em FbTypoPas Regular;
     margin: 0px;
     padding-bottom: 0px;
+    padding-right: 0px;
 }
 
 .center {
@@ -158,4 +167,8 @@ select option {
 
 .list {
     list-style-type: none;
+}
+footer{
+    direction: rtl;
+    
 }

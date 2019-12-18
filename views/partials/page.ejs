@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/stylePage.css">
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
@@ -17,10 +18,23 @@
 <body>
     <header>
 
-        <!-- <h1 style=" font: 1.8em FbTypoPas Regular"> מקום למלא</h1> -->
-        <img class="pass" src="/images/headerline.jpg">
+        <!-- <h1 style=" font: 1.8em FbTypoPas Regular"> מקום למלא</h1>  -->
 
     </header>
+    <!-- <header>
+        <img class="pass" src="/images/headerline.jpg">
+
+
+    </header> 
+
+    <header>
+           <!-- <img class="pass" src="/images/headerline.jpg">   -->
+             <div class="pass">
+            <img class="home" src="/images/pass2.jpg" style="width: 80px; float: right;">
+            <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home" style="width: 450px; "></a>
+            <img class="home" style="width: 750px; float: left;" src="/images/pass1.jpg">
+            </div>
+        </header>
 
 
     <div style="width: 100%;">
@@ -36,10 +50,10 @@
                 <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
                     </a></div>
             </li>
-            <!-- <li class="a1">
+         <!-- <li class="a1">
                     <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
                         </a></div>
-                </li> -->
+                </li>  -->
             <!-- <a href="#contact">דף הבית</a> -->
             <!-- <div class="login-container">
             <form action="/action_page.php"> -->
@@ -94,7 +108,7 @@
     </ul>
 
 
-    <footer>
+    <footer style="margin-right: 0px;">
         <ul class="a3">
             <li class="list" style="float: right; margin-right: 30px;font-style:italic;color: burlywood;
             "> רוצים להחמיא? יש לכם הצעה
@@ -109,6 +123,7 @@
                 </div>
             </li>
         </ul>
+        <div style="margin-top: 12px;">© כל הזכויות שמורות ל-Chen  תוכנות </div>
     </footer>
 
 
@@ -137,7 +152,7 @@
                                 alert(xhr.responseText);
                             else
                                 alert(xhr.responseText);
-                            // document.getElementById('').innerHTML = xhr.responseText;
+                            window.location.replace('./searchResults')
                         }
                 });
             }
