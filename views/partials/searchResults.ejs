@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <td>
-                    <div id="city">עיר מגורים:<br>
+                    <div id="city">כתובת:<br>
                         <%=d.city%>
                     </div>
                 </td>
@@ -70,6 +70,37 @@
 
         </table>
     </div>
+
+<script>
+// $.ajax({
+//   type: "POST",
+//   url: "https://mandrillapp.com/api/1.0/messages/send.json",
+//   data: {
+//     'key': '0e7d89e8a3d82053979438ba11dc4b2b-us4',
+//     'message': {
+//       'from_email': 'makomlemale@gmail.com',
+//       'to': [
+//           {
+//             ‘email’: ‘RECIPIENT_NO_1@EMAIL.HERE’,
+//             ‘name’: ‘RECIPIENT NAME (OPTIONAL)’,
+//             ‘type’: ‘to’
+//           },
+//           {
+//             ‘email’: ‘RECIPIENT_NO_2@EMAIL.HERE’,
+//             ‘name’: ‘ANOTHER RECIPIENT NAME (OPTIONAL)’,
+//             ‘type’: ‘to’
+//           }
+//         ],
+//       ‘autotext’: ‘true’,
+//       ‘subject’: ‘YOUR SUBJECT HERE!’,
+//       ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+//     }
+//   }
+//  }).done(function(response) {
+//    console.log(response); // if you're into that sorta thing
+//  });
+</script>
+
 </body>
 
 </html>

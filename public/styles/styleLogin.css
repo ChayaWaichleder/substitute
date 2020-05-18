@@ -1,93 +1,135 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 * {
-    box-sizing: border-box;
+    font: 1em FbTypoPas Regular;
+    text-align: center;
     direction: rtl;
-    font-size: 15px;
+    /* border-radius: 15px; */
 }
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
+/* header {
+    font: 1.8em FbTypoPas Regular;
+    text-align: center;
+    /* background-color: aqua; 
+}*/
+
+h1 {
+    font: 1.5em FbTypoPas Regular;
+    color: rgb(223, 148, 10);
+    margin: 0%;
+    margin-bottom: 20px;
+    padding-top: 25px;
+
 }
 
-/* The popup form - hidden by default */
-.form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
 
-/* Add styles to the form container */
-.form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-}
 
-/* Full-width input fields */
-.form-container input[type=text],
-.form-container input[type=password] {
+/* div {
+    background-color: rgb(175, 209, 206);
+    height: 200px;
+} */
+
+
+
+.pass {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
+    margin: 0px;
+    margin-bottom: 0px;
 }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus,
-.form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-    background-color: rgb(59, 143, 146);
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-    /* background-color: rgb(255, 166, 0); */
-    background-color: white;
-    height: 0px;
-    padding: 0px;
-    /* padding-top: 0px; */
-
-}
-
-#x {
-    height: 30px;
-    width: 30px;
+.home {
     position: relative;
-    bottom: 325px;
-    right: 150px;
+    width: 33%;
+    height: 220px;
+    margin: 0px;
+    /* margin-right: 75px; */
+    /* float: right; */
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover,
-.open-button:hover {
-    opacity: 1;
+
+body {
+    margin: 0px;
 }
+
+.div1 {
+    border: rgb(81, 154, 238) solid 1px;
+    /* background: url ("/public/images/mail.jpg"); */
+    background-color: rgb(190, 203, 204);
+    /*background-repeat: no-repeat; */
+    background-size: 45%;
+    /* margin: 100px; */
+    width: 600px;
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 100px;
+    /* padding-left: 50px; */
+    height: 320px;
+    position: absolute;
+    right: 405px;
+    border-collapse: collapse;
+    border-spacing:10px;
+    height: 50px;
+    /* contant-left:auto; */
+    /*    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);‏ */
+
+}
+
+form {
+    margin: 0px;
+}
+
+.a1 {
+    width: 33.13%;
+    height: 15px;
+    color: white;
+    background-color: rgb(243, 132, 4);
+    border: gray;
+    border: 28px;
+    margin: 0px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    text-align: center;
+    display: inline-block;
+    /* display: block; */
+    font: 1.2em FbTypoPas Regular;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.div2{
+    background-color: rgb(131, 184, 184);
+    width: 50%;
+    text-align: center;
+    direction: rtl;
+    /* padding: 20px, 300px, 20px, 300px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+    float: center;
+}
+
+/* .bor {
+    border: 1px solid black;
+    background-color: rgb(192, 224, 228);
+    padding: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: auto;
+    width: 350px;
+    text-align: right;
+    margin-top: 6px;
+} */

@@ -15,9 +15,10 @@
     <header>
         <!-- <img class="pass" src="/images/headerline.jpg"> -->
         <div class="pass">
-        <img class="home" src="/images/pass2.jpg" style="width: 80px; float: right;">
-        <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home" style="width: 450px; "></a>
-        <img class="home" style="width: 750px; float: left;" src="/images/pass1.jpg">
+            <img class="home" src="/images/pass2.jpg" style="width: 80px; float: right;">
+            <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home"
+                    style="width: 450px; "></a>
+            <img class="home" style="width: 750px; float: left;" src="/images/pass1.jpg">
         </div>
     </header>
 
@@ -31,14 +32,14 @@
                     <h6>
                         פרטים אישיים
                     </h6>
-                    
+
                     <div id="first" class="bor"> <input id="firstName" type="text" name="firstName" required>שם פרטי:
                     </div>
-                
+
                     <div id="last" class="bor"> <input id="lastName" type="text" name="lastName">שם משפחה:</div>
-                  
+
                     <div class="bor"> <input id="adress" type="text" name="adress">עיר מגורים:</div>
-                  
+
 
 
                     <div class="bor">
@@ -51,58 +52,61 @@
                         </datalist> מין:
                     </div>
 
-                  
+
                     <div class="bor"> <input type="text" name="password" id="password" required> הגדר סיסמא:</div>
-                    
+
                     <div class="bor"> <input type="password" name="סיסמא" id="check" required onclick="show()"> אשר
                         סיסמא:
                     </div>
-                   
-                    <span id="checkP" class="hide">בודק סיסמא...</span>
-
+                    <!-- <br><br> -->
+                    <div class="h5">
+                        <span id="checkP" class="hide">בודק סיסמא...</span></div>
                 </div>
+
                 <!-- <li> -->
-                <div style="margin-left:0px;" class="a1">
-                    <h6>
-                        פרטי התקשרות
-                    </h6>
-                   
-                    <div class="bor"> <input id="phoneNumber" type="tel" name="tel"
-                            placeholder="הכנס את מספר הטלפון שלך" required onclick="checkPass()">טלפון:
-                        <br></div>
-                   
-                    <div class="bor"> <input id="email" type="email" name="email"
-                            placeholder="הכנס את כתובת האי-מייל שלך" required>אי-מייל:<br></div>
+
 
                 </div>
                 <!-- </li> -->
 
             </li>
             <li class="a1">
-                <div class="d2">
-
+                <div style="margin-left:0px;" class="a1">
                     <h6>
-                        לימודים וניסיון </h6>
-                  
-                    <div class="bor"> <input id="profession" type="text" name="profession">מקצוע:<br></div>
+                        פרטי התקשרות
+                    </h6>
 
-                   
-                    <div class="bor"> <input id="specialization" type="text" name="profession">התמחות:<br></div>
+                    <div class="bor"> <input id="phoneNumber" type="tel" name="tel"
+                            placeholder="הכנס את מספר הטלפון שלך" required onclick="checkPass()">טלפון:
+                        <br></div>
 
-                   
-                    <div class="bor"> <input id="diploma" type="text" name="profession">תעודות:<br></div>
+                    <div class="bor"> <input id="email" type="email" name="email"
+                            placeholder="הכנס את כתובת האי-מייל שלך" required>אי-מייל:<br></div>
 
-                   
-                    <!-- <div class="bor"> <input id="experience" type="text" name="profession">ניסיון קודם:<br></div> -->
+                    <div  class="a1">
+
+                        <h6>
+                            לימודים וניסיון </h6>
+
+                        <div class="bor"> <input id="profession" type="text" name="profession">מקצוע:<br></div>
 
 
-                    <div class="bor"> <input id="recommendations" type="text" name="profession">המלצות:<br></div>
-                </div>
+                        <div class="bor"> <input id="specialization" type="text" name="profession">התמחות:<br></div>
 
-              
-                <div class="a1" style="margin-bottom: 6px;">
-                    <h6> זמינות </h6>
-                  
+
+                        <div class="bor"> <input id="diploma" type="text" name="profession">תעודות:<br></div>
+
+
+                        <!-- <div class="bor"> <input id="experience" type="text" name="profession">ניסיון קודם:<br></div> -->
+
+
+                        <div class="bor"> <input id="recommendations" type="text" name="profession">המלצות:<br></div>
+                    </div>
+
+
+                    <!-- <div class="a1" style="margin-bottom: 6px;">
+                    <h6> זמינות </h6> -->
+
 
 
 
@@ -140,9 +144,9 @@
 
 
                 </table> -->
-                </div>
+                    <!-- </div> -->
 
-                <div class="bor"> <input type="text" name="profession">תאריך עדכון:<br></div>
+                    <div class="bor"> <input type="text" name="profession">תאריך עדכון:<br></div>
                 </div>
                 <br><br>
                 <button type="submit" id="submitBtn"> הרשמה ועדכון </button>
@@ -155,10 +159,10 @@
 
             if (password.value === check.value) {
                 personal.innerHTML = " ";
-                personal.append("הסיסמאות תואמות")
+                personal.append("הסיסמאות תואמות!")
             } else {
                 personal.innerHTML = " ";
-                personal.append("הסיסמאות אינן תואמות")
+                personal.append("הסיסמאות אינן תואמות!")
             }
         };
 

@@ -26,6 +26,11 @@ body {
 
 }
 
+tr {
+    border: 25px;
+    line-height:150%;
+}
+
 .div1 {
     /* border: rgb(81, 154, 238) solid 1px; */
     /* background: url ("/public/images/mail.jpg"); */

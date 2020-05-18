@@ -36,6 +36,8 @@ form {
     margin-bottom: 0px;
 }
 
+
+
 .home {
     position: relative;
     width: 33%;
@@ -106,6 +108,13 @@ ul {
     padding-left: 0px;
 }
 
+@media screen and (max-width: 992px) {
+    .a1 {
+        float: none;
+        width: 100%;
+    }
+}
+
 .aa {
     display: block;
 }
@@ -168,7 +177,8 @@ select option {
 .list {
     list-style-type: none;
 }
-footer{
+
+footer {
     direction: rtl;
-    
+
 }

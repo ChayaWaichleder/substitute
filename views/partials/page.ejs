@@ -21,20 +21,21 @@
         <!-- <h1 style=" font: 1.8em FbTypoPas Regular"> מקום למלא</h1>  -->
 
     </header>
-    <!-- <header>
-        <img class="pass" src="/images/headerline.jpg">
+    <header>
+        <!-- <img class="pass" src="/images/headerline.jpg"> -->
 
 
-    </header> 
+    </header>
 
     <header>
-           <!-- <img class="pass" src="/images/headerline.jpg">   -->
-             <div class="pass">
+        <!-- <img class="pass" src="/images/headerline.jpg">   -->
+        <div class="pass">
             <img class="home" src="/images/pass2.jpg" style="width: 80px; float: right;">
-            <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home" style="width: 450px; "></a>
+            <a href="/" target="_parent" class="home"><img src="/images/logo1.jpg" class="home"
+                    style="width: 450px; "></a>
             <img class="home" style="width: 750px; float: left;" src="/images/pass1.jpg">
-            </div>
-        </header>
+        </div>
+    </header>
 
 
     <div style="width: 100%;">
@@ -50,7 +51,7 @@
                 <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
                     </a></div>
             </li>
-         <!-- <li class="a1">
+            <!-- <li class="a1">
                     <div class="d2"> <a href="../login" type="submit" target="_self" class="aa">הרשמה/ כניסה לאזור האישי
                         </a></div>
                 </li>  -->
@@ -123,7 +124,7 @@
                 </div>
             </li>
         </ul>
-        <div style="margin-top: 12px;">© כל הזכויות שמורות ל-Chen  תוכנות </div>
+        <div style="margin-top: 12px;">© כל הזכויות שמורות ל-Chen תוכנות </div>
     </footer>
 
 
@@ -138,7 +139,7 @@
                 // form is valid, create a post request
                 $.ajax({
                     type: "post",
-                    url: "results/getUsers",
+                    url: "/results/getUsers",
                     // the user data 
                     data: {
                         city: $('#city').val(),
@@ -150,9 +151,10 @@
                             // check if there is an error
                             if (status === 'error')
                                 alert(xhr.responseText);
-                            else
-                                alert(xhr.responseText);
-                            window.location.replace('./searchResults')
+                            else {
+                                alert("ok");
+                                window.location.replace('searchResults/' + xhr.responseText);
+                            }
                         }
                 });
             }

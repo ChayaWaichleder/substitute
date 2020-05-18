@@ -1,14 +1,32 @@
 const dbConnection = require('./dbConnection.js');
 
-async function getUsers(req, res) {
-    console.log(req.body.city);
-    console.log(req.body.profession);
-    console.log(req.body.specialization);
+// async function getUsers(req, res) {
+//     console.log(req.body.city);
+//     console.log(req.body.profession);
+//     console.log(req.body.specialization);
 
-    let users = await dbConnection.queryConnection(
-        "select * from users where city='" + req.body.city + "' AND profession='" + req.body.profession + "' AND specialization='" + req.body.specialization + "'"); {
-        return users;
+//     let users = await dbConnection.queryConnection(
+//         "select * from users where city='" + req.body.city + "' AND profession='" + req.body.profession + "' AND specialization='" + req.body.specialization + "'"); {
+//         return users;
+//     }
+// }
+
+async function getUsers(req, res) {
+    let users = await dbConnection.queryConnection("select * from users");
+    let results = [];
+    for (let single of users) {
+        if (single.city === req.body.city &&
+            single.profession === req.body.profession &&
+            single.specialization === req.body.specialization
+        ) {
+            // res.send("ok");
+            console.log(single);
+            let x = single.id
+            res.send(x.toString());
+
+        }
     }
+    return res.status(500).send("משתמש אינו קיים במערכת!")
 }
 
 module.exports = {
