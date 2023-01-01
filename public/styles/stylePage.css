@@ -34,6 +34,7 @@ form {
     width: 100%;
     margin: 0px;
     margin-bottom: 0px;
+    border: 3px solid #476b88
 }
 
 
@@ -182,3 +183,18 @@ footer {
     direction: rtl;
 
 }
+
+::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #a5a1c4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #291083;
+    border-radius: 50%;
+    border: 2px solid #291083;
+  }
+  
